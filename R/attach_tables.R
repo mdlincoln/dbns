@@ -1,6 +1,6 @@
 #' Attach all the tables in a database as tbl objects within an attached environment
 #'
-#' @param db A [DBI::dbConnection] object
+#' @param db A [DBI::DBIConnection-class] object
 #' @param dbname Character. Name of the environment to create
 #'
 #' @return Invisibly returns character vector of table names.

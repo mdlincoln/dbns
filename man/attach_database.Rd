@@ -7,7 +7,7 @@
 attach_database(db, dbname)
 }
 \arguments{
-\item{db}{A \link[DBI:dbConnection]{DBI::dbConnection} object}
+\item{db}{A \link[DBI:DBIConnection-class]{DBI::DBIConnection} object}
 
 \item{dbname}{Character. Name of the environment to create}
 }

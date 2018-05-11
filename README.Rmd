@@ -1,0 +1,41 @@
+---
+output:
+  md_document:
+    variant: markdown_github
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, echo = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "README-"
+)
+```
+
+# dbns
+
+dbns creates a DataBase NameSpace, adding all the tables available from a given database connection into a namespace as `tbl` objects ready to be manipulated by [dplyr]
+
+[dplyr]: https://cran.r-project.org/web/packages/dplyr/index.html
+
+## Example
+
+```{r example}
+library(dbns)
+library(DBI)
+db <- dbConnect(RSQLite::SQLite(), system.file("extdata/dbns.sqlite", package = "dbns"))
+
+dbListTables(db)
+
+attach_database(db, "dbns")
+
+dbns_iris
+
+dbns_mtcars
+```
+
+```{r disconnect, echo = FALSE}
+dbDisconnect(db)
+```
