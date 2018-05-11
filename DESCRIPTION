@@ -1,0 +1,14 @@
+Package: dbns
+Version: 0.0.0.9000
+Title: Load All Tables From A Database Into R Objects
+Description: What the package does (one paragraph).
+Authors@R: person('Matthew Lincoln', email = 'matthew.d.lincoln@gmail.com', role = c('aut', 'cre'))
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+ByteCompile: true
+Imports: DBI,
+    dbplyr
+Suggests: testthat
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 6.0.1
