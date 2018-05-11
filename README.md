@@ -2,6 +2,8 @@
 dbns
 ====
 
+[![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
+
 dbns creates a DataBase NameSpace, adding all the tables available from
 a given database connection into a namespace as `tbl` objects ready to
 be manipulated by
