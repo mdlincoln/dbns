@@ -4,12 +4,14 @@
 \alias{attach_database}
 \title{Attach all the tables in a database as tbl objects within an attached environment}
 \usage{
-attach_database(db, dbname)
+attach_database(db, dbname, quiet = FALSE)
 }
 \arguments{
 \item{db}{A \link[DBI:DBIConnection-class]{DBI::DBIConnection} object}
 
 \item{dbname}{Character. Name of the environment to create}
+
+\item{quiet}{Message the names of tables attached? Defaults to \code{TRUE}}
 }
 \value{
 Invisibly returns character vector of table names.
