@@ -21,6 +21,9 @@ dbListTables(db)
 #> [1] "dbns_iris"   "dbns_mtcars"
 
 attach_database(db, "dbns")
+#> Attached 2 tables:
+#> - dbns_iris 
+#> - dbns_mtcars
 
 dbns_iris
 #> # Source:   table<dbns_iris> [?? x 5]
