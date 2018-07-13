@@ -5,8 +5,7 @@
 #' @return TRUE invisibly if detach was successful
 #'
 #' @export
-detatch_database <- function(dbname) {
-  res <- detatch(dbname, character.only = TRUE)
-  if (is.null) invisible(TRUE)
+detach_database <- function(dbname) {
+  res <- detach(dbname, character.only = TRUE)
   res
 }
