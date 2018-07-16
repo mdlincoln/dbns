@@ -18,7 +18,7 @@ knitr::opts_chunk$set(
 
 [![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
 
-dbns creates a DataBase NameSpace, adding all the tables available from a given database connection into a namespace as `tbl` objects ready to be manipulated by [dplyr]
+dbns creates a DataBase NameSpace, adding all the tables available from a given database connection into a namespace as `tbl` objects ready to be manipulated by [dplyr].
 
 [dplyr]: https://cran.r-project.org/web/packages/dplyr/index.html
 
@@ -38,6 +38,11 @@ dbns_iris
 dbns_mtcars
 ```
 
-```{r disconnect, echo = FALSE}
+Detach a database namespace when you are done.
+Note that dbns does not disconnect the DBI connection.
+
+```{r disconnect}
+detach_database("dbns")
+
 dbDisconnect(db)
 ```

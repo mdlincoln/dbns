@@ -11,6 +11,7 @@ detach_database <- function(dbname, quiet = FALSE) {
   res <- detach(dbname, character.only = TRUE)
   if (is.environment(res)) {
     message(dbname, " detatched")
-    invisible(TRUE)
+    return(invisible(TRUE))
   }
+  FALSE
 }

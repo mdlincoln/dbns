@@ -4,13 +4,15 @@
 \alias{detach_database}
 \title{Detach a database namespace and close the connection}
 \usage{
-detach_database(dbname)
+detach_database(dbname, quiet = FALSE)
 }
 \arguments{
-\item{dbname}{}
+\item{dbname}{Character. Name of the namespace created by \link{attach_database}.}
+
+\item{quiet}{Logical. Message if detach successful.}
 }
 \value{
-TRUE invisibly if detach was successful
+TRUE invisibly if detach was successful.
 }
 \description{
 Detach a database namespace and close the connection

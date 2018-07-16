@@ -7,7 +7,7 @@ dbns
 dbns creates a DataBase NameSpace, adding all the tables available from
 a given database connection into a namespace as `tbl` objects ready to
 be manipulated by
-[dplyr](https://cran.r-project.org/web/packages/dplyr/index.html)
+[dplyr](https://cran.r-project.org/web/packages/dplyr/index.html).
 
 Example
 -------
@@ -60,4 +60,15 @@ dbns_mtcars
 #>  9  22.8     4  141.    95  3.92  3.15  22.9     1     0     4     2
 #> 10  19.2     6  168.   123  3.92  3.44  18.3     1     0     4     4
 #> # ... with more rows
+```
+
+Detach a database namespace when you are done. Note that dbns does not
+disconnect the DBI connection - this connection is left up to the user
+to handle.
+
+``` r
+detach_database("dbns")
+#> dbns detatched
+
+dbDisconnect(db)
 ```
