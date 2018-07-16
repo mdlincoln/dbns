@@ -3,6 +3,12 @@ dbns
 ====
 
 [![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
+[![Travis-CI Build
+Status](https://travis-ci.org/mdlincoln/dbns.svg?branch=master)](https://travis-ci.org/mdlincoln/dbns)
+[![AppVeyor Build
+Status](https://ci.appveyor.com/api/projects/status/github/mdlincoln/dbns?branch=master&svg=true)](https://ci.appveyor.com/project/mdlincoln/dbns)
+[![Coverage
+Status](https://img.shields.io/codecov/c/github/mdlincoln/dbns/master.svg)](https://codecov.io/github/mdlincoln/dbns?branch=master)
 
 dbns creates a DataBase NameSpace, adding all the tables available from
 a given database connection into a namespace as `tbl` objects ready to
@@ -63,8 +69,7 @@ dbns_mtcars
 ```
 
 Detach a database namespace when you are done. Note that dbns does not
-disconnect the DBI connection - this connection is left up to the user
-to handle.
+disconnect the DBI connection.
 
 ``` r
 detach_database("dbns")
