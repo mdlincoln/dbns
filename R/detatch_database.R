@@ -13,5 +13,4 @@ detach_database <- function(dbname, quiet = FALSE) {
     message(dbname, " detatched")
     return(invisible(TRUE))
   }
-  FALSE
 }

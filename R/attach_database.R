@@ -9,7 +9,7 @@
 #' @export
 attach_database <- function(db, dbname, quiet = FALSE) {
   db_tables <- DBI::dbListTables(db)
-  e <- new.env(parent = emptyenv())
+  e <- new.env(parent = as.environment(dbns_container_name))
   lapply(db_tables, attach_single_table, db = db, env = e)
   attach(e, name = dbname)
 
