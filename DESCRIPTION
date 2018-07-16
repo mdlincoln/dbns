@@ -11,7 +11,8 @@ LazyData: true
 ByteCompile: true
 Imports: DBI,
     dbplyr
-Suggests: testthat
+Suggests: testthat,
+    covr
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 6.0.1
 URL: https://github.com/mdlincoln/dbns
