@@ -10,7 +10,8 @@ Encoding: UTF-8
 LazyData: true
 ByteCompile: true
 Imports: DBI,
-    dbplyr
+    dbplyr,
+    dplyr
 Suggests: testthat,
     covr,
     RSQLite
